@@ -1,40 +1,39 @@
 # Timeless
 
-Un système d'exploitation mobile original, réactif et portable, conçu pour prolonger la vie de
-smartphones anciens sans bloatware.
+An original, responsive, and portable mobile operating system designed to extend the useful life of
+older smartphones without bloatware.
 
-> **État du projet : J0 — cadrage et laboratoire reproductible.** Aucun noyau, prototype QEMU ou port
-> matériel n'est encore revendiqué comme existant.
+> **Project status: J0 — specification and reproducible laboratory.** No kernel, QEMU prototype, or
+> hardware port is currently claimed to exist.
 
-## Principes
+## Principles
 
-- Réactivité perçue et stabilité mesurées avant l'ajout de fonctions.
-- Cœur commun portable ; adaptations matérielles isolées par architecture et appareil.
-- Système, outils de construction, spécifications et documentation publics.
-- Preuves réelles avant toute affirmation de compatibilité ou de performance.
-- Travail matériel réversible, documenté et soumis à validation explicite.
-- Cycle obligatoire : Spec Kit → clarification → plan → tâches → analyse → implémentation → preuves.
+- Measured perceived responsiveness and stability before feature count.
+- A portable common core with hardware adaptations isolated by architecture and device.
+- Public system source code, build tools, specifications, and documentation.
+- Real evidence before any compatibility or performance claim.
+- Reversible, documented hardware work requiring explicit approval.
+- Mandatory workflow: Spec Kit → clarification → plan → tasks → analysis → implementation → evidence.
 
-La constitution complète du projet est dans
+Read the complete project constitution in
 [`.specify/memory/constitution.md`](.specify/memory/constitution.md).
 
-## Licence
+## Licensing
 
-Le code est distribué sous **GPL-3.0-or-later**. Les spécifications, la documentation et les artefacts
-de conception sont distribués sous **CC-BY-SA-4.0**, sauf indication contraire pour un élément tiers.
-Les firmwares matériels nécessaires restent des dépendances externes documentées ; ils ne font pas
-partie du projet Timeless.
+Project code is distributed under **GPL-3.0-or-later**. Specifications, documentation, and design
+artifacts are distributed under **CC-BY-SA-4.0** unless a third-party item states otherwise. Required
+hardware firmware remains an external, documented dependency and is not part of Timeless.
 
-Voir [`LICENSE`](LICENSE).
+See [`LICENSE`](LICENSE).
 
-## Démarrage du travail
+## Starting Work
 
-Le premier lot sera une spécification J0 : laboratoire QEMU reproductible et preuve de démarrage d'un
-noyau autonome. Aucun achat, flash d'appareil ou exposition à des données personnelles/à Internet ne
-fait partie de ce dépôt de démarrage.
+The first work item will be a J0 specification for a reproducible QEMU laboratory and proof of
+independent kernel boot. No device purchase, device flashing, or exposure to personal data or the
+public Internet belongs to this initial repository state.
 
-## Contribution
+## Contributing
 
-Chaque lot passe par une branche dédiée et une pull request documentée. Les commits suivent
-Conventional Commits ; les PR relient les artefacts Spec Kit, les preuves de test/mesure et les mises à
-jour de documentation.
+Every work item uses a dedicated branch and a documented pull request. Commits follow Conventional
+Commits; pull requests link the relevant Spec Kit artifacts, test and measurement evidence, and
+corresponding documentation updates.
