@@ -3,8 +3,9 @@
 An original, responsive, and portable mobile operating system designed to extend the useful life of
 older smartphones without bloatware.
 
-> **Project status: J0 — specification and reproducible laboratory.** No kernel, QEMU prototype, or
-> hardware port is currently claimed to exist.
+> **Project status: J0 — a QEMU laboratory, not a guest OS.** Preflight, tests and DTB
+> inspection ran both on a provisioned host and in a fresh Debian 13 rootfs with pinned packages.
+> No second-host reproduction, Timeless kernel, autonomous boot, phone port, or performance baseline is claimed.
 
 ## Principles
 
@@ -26,11 +27,17 @@ hardware firmware remains an external, documented dependency and is not part of 
 
 See [`LICENSE`](LICENSE).
 
-## Starting Work
+## J0 laboratory
 
-The first work item will be a J0 specification for a reproducible QEMU laboratory and proof of
-independent kernel boot. No device purchase, device flashing, or exposure to personal data or the
-public Internet belongs to this initial repository state.
+The [J0 specification](specs/001-qemu-laboratory/spec.md),
+[quickstart](specs/001-qemu-laboratory/quickstart.md),
+[test matrix](specs/001-qemu-laboratory/test-matrix.md), and
+[execution evidence](specs/001-qemu-laboratory/evidence.md) describe the `virt-10.0`
+AArch64 board and its limits. Run `python3 -m unittest discover -s tests -v`, then
+`python3 scripts/qemu_lab.py preflight` once the pinned host tools are available.
+`inspect --output PATH` produces a DTB; `run --image PATH` requires a future J1 image and does
+not itself prove a successful boot. No device purchase, flashing, personal data, or guest Internet
+access belongs to J0.
 
 ## Contributing
 

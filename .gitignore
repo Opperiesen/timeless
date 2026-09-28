@@ -1,0 +1,15 @@
+# Host-side test/build artifacts (never commit generated guest images or traces)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.dtb
+*.img
+*.log
+*.tmp
+*.swp
+.DS_Store
+.idea/
+.vscode/
