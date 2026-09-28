@@ -38,4 +38,4 @@ To recheck the archived raw artifact: `gzip -dc specs/001-qemu-laboratory/eviden
 - **IV — evidence:** local QEMU and fresh Debian rootfs preflight/inspection are distinguished from a second-host setup and untested J1 boot.
 - **V — hardware safety:** no real-device purchase, flash, personal data, or public guest networking; `-nic none` is visible in the actual preflight arguments.
 - **VI — traceability:** requirements, plan, tasks, per-scenario matrix, CLI, tests and evidence are linked; two [independent review passes](review.md) identified gaps, then corrections were re-tested by the author.
-- **VII — auditable Git:** work is on `feat/j0-qemu-laboratory`; at evidence capture no commit or pull request had been made. This remains an **open gate** until the branch/PR are read back.
+- **VII — auditable Git:** the original evidence capture preceded the commit. Reviewed artifacts were committed on `feat/j0-qemu-laboratory` as `e250f41` and pushed; [PR #2](https://github.com/Opperiesen/timeless/pull/2) was read back as **OPEN** against `main`. Human review and merge remain pending. GitHub reported no checks on the branch; no CI success is claimed.

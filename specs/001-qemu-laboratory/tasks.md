@@ -39,7 +39,7 @@
 
 - [x] T013 Run `python3 -m unittest discover -s tests -v` and documented preflight/inspect/missing-image procedures; archive genuine outcomes in `specs/001-qemu-laboratory/evidence.md`.
 - [x] T014 Review constitutional gates, verify `git diff --check` and documentation claims, and update `README.md` with actual J0 status and entrypoint. *(Two independent read-only review passes in review.md; findings corrected and re-tested by the author.)*
-- [ ] T015 Commit reviewed artifacts on `feat/j0-qemu-laboratory`; open a PR with Spec Kit link, evidence and limitations, without pushing to `main` directly.
+- [x] T015 Commit reviewed artifacts on `feat/j0-qemu-laboratory`; open [PR #2](https://github.com/Opperiesen/timeless/pull/2) with Spec Kit link, evidence and limitations, without pushing to `main` directly. *(PR open; human review and merge remain pending.)*
 
 ## Dependencies & Execution Order
 
