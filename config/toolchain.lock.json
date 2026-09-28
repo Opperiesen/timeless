@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "host": {"system": "Linux", "machine": "x86_64", "python": "3.13.5", "debian_package": "3.13.5-1"},
+  "qemu": {"version": "10.0.13", "debian_package": "1:10.0.13+ds-0+deb13u1", "executable": "qemu-system-aarch64"},
+  "machine": {"type": "virt-10.0", "cpu": "cortex-a53", "cpus": 1, "memory_mib": 256, "accelerator": "tcg", "network": "none"}
+}

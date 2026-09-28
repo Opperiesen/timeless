@@ -1,0 +1,40 @@
+{
+  "dtb": "/work/out/board-provenance.dtb",
+  "bytes": 1048576,
+  "sha256": "268dd1a19173588a4d7e25f21cc1eee1d4fe4dd1acd8efc202b8d31c0002b030",
+  "qemu_version": "10.0.13",
+  "python_version": "3.13.5",
+  "qemu_binary": "/usr/bin/qemu-system-aarch64",
+  "machine": {
+    "type": "virt-10.0",
+    "cpu": "cortex-a53",
+    "cpus": 1,
+    "memory_mib": 256,
+    "accelerator": "tcg",
+    "network": "none"
+  },
+  "arguments": [
+    "-machine",
+    "virt-10.0,dtb-randomness=off",
+    "-cpu",
+    "cortex-a53",
+    "-smp",
+    "1",
+    "-m",
+    "256M",
+    "-accel",
+    "tcg",
+    "-nographic",
+    "-nic",
+    "none",
+    "-nodefaults",
+    "-serial",
+    "mon:stdio",
+    "-no-reboot"
+  ],
+  "debian_packages": {
+    "python3": "3.13.5-1",
+    "qemu-system-arm": "1:10.0.13+ds-0+deb13u1"
+  },
+  "package_verification": "verified"
+}
