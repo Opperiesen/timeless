@@ -41,9 +41,13 @@ A capability MUST be documented only at its verified state: tested functional, p
 blocked. A successful boot MUST NOT be described as daily-usable telephony. Code, automated tests,
 reproducible execution instructions, traces or other proof, and matching documentation MUST be
 submitted together for a feature to be complete. Documentation commands MUST have been executed in
-a clean environment or be explicitly marked unverified.
+a clean environment or be explicitly marked unverified. All versioned documentation, specifications,
+architecture decisions, pull requests, issues, and contributor-facing material MUST be authored and
+maintained exclusively in English.
 
-Rationale: portable operating-system work is unusually vulnerable to plausible but untested claims.
+Rationale: portable operating-system work is unusually vulnerable to plausible but untested claims;
+a single project language makes its evidence and contribution process accessible to the widest
+technical community.
 
 ### V. Reversible and Safe Hardware Work
 No device purchase, destructive flash, firmware/baseband modification, or irrecoverable hardware
@@ -59,7 +63,7 @@ Every functional lot MUST follow Spec Kit in order: specification, clarification
 tasks, consistency analysis, implementation, then validation with real evidence. Requirements,
 assumptions, decisions, tests, code, measurements, and documentation MUST remain traceable in the
 repository. Subagents MUST own non-overlapping files or lots; the integrator remains responsible for
-cross-artifact consistency.
+cross-artifact consistency. All Spec Kit artifacts and their templates MUST be written in English.
 
 Rationale: the project requires parallel work without losing evidence, intent, or architectural
 coherence.
@@ -128,12 +132,12 @@ artifact is corrected or this constitution is formally amended.
 
 Amendments require: a written rationale; an impact review covering code, requirements, tests,
 documentation, evidence, and device ports; Gabin's approval when scope, hardware risk, safety,
-licensing, or project priorities change; and an updated Sync Impact Report. The report is temporary
-review material and MUST be removed before committing the constitution.
+licensing, documentation language, or project priorities change; and an updated Sync Impact Report.
+The report is temporary review material and MUST be removed before committing the constitution.
 
 Versioning is semantic: MAJOR for incompatible removal or redefinition of a governing principle;
 MINOR for a new principle or materially expanded governance; PATCH for clarifications that do not
 change obligations. Compliance reviews MUST reject aspirational claims unsupported by current,
 reproducible evidence.
 
-**Version**: 1.1.0 | **Ratified**: 2026-09-28 | **Last Amended**: 2026-09-28
+**Version**: 1.2.0 | **Ratified**: 2026-09-28 | **Last Amended**: 2026-09-28
